@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="D:\project2\faviconproject2 - Copy.png" rel="icon">
+        <meta class="foundation-mq-small"><!--forsmall screens-->
+        <meta class="foundation-mq-small-only"><!--forsmall screens-->
+        <meta class="foundation-mq-medium"><!--formedium screens-->
+        <meta class="foundation-mq-medium-only"><!--formedium screens-->
+        <meta class="foundation-mq-large"><!--forlarge screens-->
+        <meta class="foundation-mq-large-only"><!--forlarge screens-->
+        <meta class="foundation-mq-xlarge"><!--forxlarge screens-->
+        <meta class="foundation-mq-xlarge-only"><!--forxlarge screens-->
+        <meta class="foundation-mq-xxlarge"><!--forxxlarge screens-->
+        <meta class="foundation-data-attribute-namespace">
+        <title>Computer's Area </title>
+        <meta name="keywords" content="Computer's Area, computer, specs, computer's specs, laptops, technology">
+        <meta name="description" content="Computer's Area the best site for viewing computer's specs">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+        *{
+         padding: 0;
+         margin: 0;
+        }
+         .textboxcont{
+              height: 5.3vh;
+              background-color: #140152;
+              width: 43.7vw;
+              margin-left: 28vw;
+              margin-right: 28vw;
+              box-shadow: 0 4px 8px 0 #2d1385, 0 6px 20px 0 #2d1385;
+         }
+         .backgroundimage{
+                width: 100%;
+                height: 100%;
+               background-image: url('pexels-nikhil-soni-16230157 (5).jpg');
+               background-size: 100% 100%;
+              filter: blur(6px);
+              position: fixed;
+              z-index: -1;
+              background-repeat: no-repeat;
+            }
+         body::-webkit-scrollbar{
+            display: none;
+         }
+         .logoclass{
+           max-width: 420px;
+           height: 320px;
+           padding-top: 30px;
+         }
+         #logo{
+            z-index: 1;
+            position: absolute;
+            padding-left: 35vw;
+            width: 420px;
+            height: 320px;
+            animation-name: logo;
+            animation-duration: 3s;
+            animation-timing-function: ease;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            padding-top: 30px;
+            max-width: 100%;
+         }
+         @keyframes logo {
+            from{
+               width: 0vw;
+               padding-top: -10vh;
+               height: 0vh;
+            }
+            to{
+               width: 420px;
+               height:320px;
+               padding-top: 30px;
+            }
+              
+         }
+         .search-container {
+           padding-top: 50px;
+            z-index: 1;
+            position: absolute;
+            animation-name:searchbar;
+            animation-duration: 3s;
+            animation-delay: 0;
+            animation-timing-function: ease;
+            animation-iteration-count: 1;
+        }
+
+        #search {
+         padding-bottom:0.5vh;
+           font-size: 2.4vh;
+         display: flex;
+            padding-top: 1vh; 
+            width: 35vw;
+            height: 5.1vh;
+            border: 2px solid black;
+            margin-left:0;
+            z-index: 4;
+            position: absolute;
+            justify-content: center;
+            border-bottom: 0.025vh solid black;
+           border-left: 0.025vw solid black;
+           border-top: 0.025vh solid black;
+           border-right: 0.025vw solid black;
+           border-top-left-radius: 0.25vw;
+           border-bottom-left-radius: 0.25vw;
+           box-sizing: border-box;
+           margin-top: 0.1vh;
+         }
+
+        .btn {
+            margin-top: -2px;
+           padding-top: 1vh;
+            width: 9vw;
+            height: 5.1vh;
+            border: 1px solid black;
+            z-index:4;
+            position: absolute;
+            margin-left: 34.89vw;
+            background-color: #140152;
+            justify-content: center;
+            display: flex;
+            font-size: larger;
+            color: white;
+            border-bottom-right-radius: 0.25vw;
+            border-top-right-radius: 0.25vw;  
+            font-size: 2.4vh;
+            box-sizing: border-box;
+            margin-top: 0.1vh;
+           }
+        #search::placeholder{
+          font-size: 2vh;
+          padding-left:1vh;
+        }
+        body{
+         height: 100vh;
+         width:100vw;
+        }
+         @keyframes searchbar{
+            0%{
+               opacity: 0;
+            }
+            10%{
+               opacity: 0.1;
+            }
+            20%{
+               opacity: 0.2;
+            }
+            30%{
+               opacity: 0.3;
+            }
+            40%{
+               opacity: 0.4;
+            }
+            50%{
+               opacity: 0.5;
+            }
+            60%{
+               opacity: 0.6;
+            }
+            70%{
+               opacity: 0.7;
+            }
+            80%{
+               opacity: 0.8;
+            }
+            90%{
+               opacity: 0.9;
+            }
+            100%{
+               opacity: 1;
+            }
+         }
+         .computers{
+            z-index: 2;
+            justify-content: center;
+           position: absolute;
+           justify-content: end;
+           display: flex;
+           top:0;
+          height: 15vh;
+            left:0;
+         }
+         
+      
+        #search::placeholder{
+          font-size: 2vh;
+          padding-left:1vh;
+        }
+           .listbar{/*L div l by7twe 3ala kl she lists*/
+          height:6vh;
+          background-color:#140152;
+          width:100vw;
+          z-index:2;
+          box-shadow: 0 8px 12px 0 #2d1385, 0 8px 20px 0 #2d1385;
+          animation-name: changecolorborder;
+          animation-duration: 4s;
+          animation-timing-function: ease;
+          animation-iteration-count: infinite;
+         }
+         @keyframes changecolorborder {
+            0%{
+               border-color: #140152;
+            }
+            25%{
+               border-color: #3d2197;
+            }
+            50%{
+               border-color: rgb(168, 18, 228);
+            }
+            100%{
+               border-color: #1d0763;
+            }
+            
+         }
+         .listbar{
+        border:1px solid black;
+        
+         }
+         
+        .listbar li{/*elements jowa l inline lists mtl hp msi ...etc*/
+          display:inline-block;
+          position: relative;
+          padding-left: -1vw;
+          font-size:large;
+          padding-right: 2vw;
+          padding-bottom:1vh;
+        }
+        @keyframes colorchangelist {
+           0%{
+             color: #810db8;
+           }
+           25%{
+             color: #3b09df;
+           }
+           50%{
+             color: #2c0b99;
+           }
+           100%{
+             color: #140152;
+           }
+        }
+
+        .dropbtn {/*matra7 ma mawjodeen L BUTTONS mtl msi hp ...etc*/
+            background-color: transparent;
+            color: whitesmoke;
+            padding:0vh 0.5vw 0vh 0vw;
+            font-size: 1vh;
+            border: none;
+            cursor: pointer;
+            text-decoration: solid;
+            position:  relative;
+            padding-left: 1.8vw;
+        }
+        
+        .drpdown {/*matra7 ma mawjoode kl list w button*/
+          position: relative;
+            display: inline-block;
+            font-size: medium;
+            height: 6vh;
+        }
+        .dropdown-content {/*matra7 ma mawjodeeen l lists */
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9cb;
+            min-width: 24vw;/*bas ynzal l list mn kl element 3ard kl w7de fea*/
+            border:#413e3e;
+            border-radius: 0.70vh;
+            
+          }
+        .dropdown-content a{/*links elements jowa l list l btnzal mtl lenovo thinkpad...*/
+            color: black;
+            padding: 1vh 0.5vw;
+            text-decoration: none;
+            display: block;
+          animation-name: colorchangelist;
+          animation-duration: 5s;
+          animation-delay: 0s;
+          animation-timing-function: ease;
+          animation-iteration-count: infinite;
+          font-size: medium;
+        }
+        .dropdown-content a:hover {/*bas 7ot l mouse pointer 3al blocks jowa kl list*/
+            background-color: rgb(121, 116, 116);
+            color: white;
+            text-decoration: none;
+        }
+        .drpdown:hover .dropdown-content {
+            display: block;
+        }
+        #myDropdown {
+         max-height: 28.12vh; /* Set the maximum height for the list */
+      overflow-y: auto; /* Enable vertical scroll when content overflows */
+      border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+    }
+    #myDropdown::-webkit-scrollbar-thumb{
+      background-color:rgb(41, 41, 146);
+      scrollbar-color:rgb(46, 46, 141);
+      border-radius: 1.4vh;
+      border:1px solid #140152;
+      
+    }
+    #myDropdown::-webkit-scrollbar{
+      width:0.8vw;
+      border:0.27vh solid #140152;
+      border-radius: 1.4vh;
+    }
+        .computers{
+         animation-name: searchbar;
+         animation-duration: 3s;
+         animation-delay: 0s;
+         animation-iteration-count: 1;
+         animation-timing-function: ease;
+        }
+         .Welcome{
+            display:flexa;
+            z-index: 5;
+            padding-top:160px;
+            padding-left:19vw;
+            width: 100%;
+            height: auto;
+          }
+
+         .text{
+            font-size:4vh;
+            letter-spacing:1vw;
+            font-family:helvetica;
+            border-right:1vw;
+            width:100%;
+            color:white;
+            padding-right:3vw;
+            -webkit-text-stroke:6px solid black;
+            white-space:nowrap;
+            overflow:hidden;
+            animation: 
+            typing 4s steps(26),
+            cursor .4s step-end infinite alternate;
+            animation-iteration-count:infinite;
+            animation-duration:3s;
+            z-index:  5;
+            position:relative;
+            text-decoration:bold;
+         }
+
+.animated-element {
+  animation: exampleAnimation 6s infinite;
+}
+         @keyframes cursor{
+                 0%{
+                  border-color:transparent;
+                 }               
+         }
+         @keyframes typing{
+            0%{
+               width:0;
+            }
+         }
+  
+         #hppic1{
+            width:22vw;
+            height: 35vh;
+             margin-top: 6vh;
+             margin-left: 4vh;
+             border:1px ridge black;
+            top:1;
+            z-index: 3;
+            position: relative;
+            box-sizing: border-box;
+            box-shadow: 0 8px 12px 0 #2d1385, 0 8px 20px 0 #2d1385;
+           
+         }
+         .pictures{
+            margin-top: 10vh;
+            width: 100%;
+            height: 30vh;
+            z-index: 3;
+         }
+         .footer{
+            width: 100%;
+            margin-top: 12vh;
+            height: 20vh;
+         }
+         .footer a i {
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer a:hover i {
+  transform: scale(1.2);
+}
+#copyright{
+         text-align: center;
+         justify-content: center;
+         color:white;
+         font-size: medium;
+         margin-top: 5vh;
+            }
+ #designer{
+   animation-name: colorchange;
+   animation-duration: 6s;
+   animation-timing-function: ease;
+   animation-iteration-count: infinite;
+   animation-delay: 0;
+         }
+         @keyframes colorchange {
+            0%{
+               color: purple;
+            }
+            20%{
+               color: rgb(253, 2, 44);
+            }
+            40%{
+               color:rgb(255, 0, 255)
+            }
+            60%{
+               color: rgb(182, 2, 253), 9, 223;
+            }
+            80%{
+               color: #2c0b99;
+            }
+            100%{
+               color: #ccc;
+            }
+         }
+         .hplink a{
+           text-decoration: none; 
+           color:white; 
+         }
+         @media only screen and (max-width: 600px) {
+        /* Styles for small screens */
+        .textboxcont {
+            width: 90vw;
+            margin-left: 5vw;
+            margin-right: 5vw;
+        }
+
+        #logo {
+            padding-left: 5vw;
+        }
+
+        #search {
+            width: 70vw;
+            margin-left: 5vw;
+        }
+
+        .btn {
+            margin-left: 75vw;
+        }
+
+        .listbar li {
+            padding-left: 0.5vw;
+            padding-right: 1vw;
+            font-size: medium;
+        }
+    }
+
+    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+        /* Styles for medium screens */
+        .textboxcont {
+            width: 70vw;
+            margin-left: 15vw;
+            margin-right: 15vw;
+        }
+
+        #logo {
+            padding-left: 10vw;
+        }
+
+        #search {
+            width: 50vw;
+            margin-left: 10vw;
+        }
+
+        .btn {
+            margin-left: 60vw;
+        }
+
+        .listbar li {
+            padding-left: 0.5vw;
+            padding-right: 1vw;
+            font-size: medium;
+        }
+    }
+    .Welcome {
+            padding-top: 120px;
+            padding-left: 5vw;
+        }
+
+        .text {
+            font-size: 3vh;
+            letter-spacing: 0.5vw;
+            padding-right: 2vw;
+        }
+
+        .computers {
+            height: 20vh;
+        }
+
+        .listbar {
+            height: 4vh;
+            font-size: small;
+        }
+
+        .drpdown {
+            height: 4vh;
+            font-size: small;
+        }
+
+        .footer {
+            margin-top: 8vh;
+        }
+
+        footer a i {
+            font-size: 4vh;
+            padding-left: 5vw;
+            padding-top: 2vh;
+        }
+
+        #copyright {
+            font-size: small;
+            margin-top: 2vh;
+        }
+    }
+
+    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+        /* Styles for medium screens */
+
+        .Welcome {
+            padding-top: 140px;
+            padding-left: 10vw;
+        }
+
+        .text {
+            font-size: 3.5vh;
+            letter-spacing: 0.8vw;
+            padding-right: 3vw;
+        }
+
+        .computers {
+            height: 12vh;
+        }
+
+        .listbar {
+            height: 5vh;
+            font-size: medium;
+        }
+
+        .drpdown {
+            height: 5vh;
+            font-size: medium;
+        }
+
+        .footer {
+            margin-top: 10vh;
+        }
+
+        footer a i {
+            font-size: 5vh;
+            padding-left: 8vw;
+            padding-top: 4vh;
+        }
+
+        #copyright {
+            font-size: medium;
+            margin-top: 5vh;
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        /* Styles for small screens */
+
+        .footer {
+            margin-top: 8vh;
+        }
+
+        footer a i {
+            font-size: 4vh;
+            padding-left: 5vw;
+            padding-top: 2vh;
+        }
+
+        #copyright {
+            font-size: small;
+            margin-top: 2vh;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        /* Styles for small screens */
+
+        .footer {
+            margin-top: 8vh;
+        }
+
+        footer a i {
+            font-size: 4vh;
+            margin-right: 2vw; /* Adjusted spacing between icons */
+            padding-top: 2vh;
+        }
+
+        #copyright {
+            font-size: small;
+            margin-top: 2vh;
+        }
+    }
+
+    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+        /* Styles for medium screens */
+
+        .footer {
+            margin-top: 10vh;
+        }
+
+        footer a i {
+            font-size: 5vh;
+            margin-right: 3vw; /* Adjusted spacing between icons */
+            padding-top: 4vh;
+        }
+
+        #copyright {
+            font-size: medium;
+            margin-top: 5vh;
+        }
+    }
+
+       </style>
+        </head>
+        <body>
+        
+              <div class="computers">
+               <div class="listbar">
+                  <ul style="margin-top: -1vh;" id="tagList">
+                      <div class="drpdown">
+                          <button class="dropbtn" style="font-size: 3.5vh;height: 2vh; padding-top: 2vh; padding-left: 0vw;;"><span class="hplink"><a href="hp.html" style="text-decoration: none; color:white; "><strong>HP</strong></a></span></button>
+                          <div id="myDropdown" class="dropdown-content">
+                              <a href="www.google.com">HP Omen Series</a>
+                              <a href="www.google.com">HP Victus Series</a>
+                              <a href="">HP Pavilion Series</a>
+                              <a href="">HP ProBook Series</a>
+                              <a href="">HP Z-Book Series</a>
+                              <a href="">HP Envy Series</a>
+                              <a href="">HP ChromeBook Series</a>
+                              <a href="">HP EliteBook Series</a>
+                              <a href="">HP Stream Series</a>
+                          </div>
+                      </div>
+                      <div class="drpdown">
+                        <button class="dropbtn" style="font-size: 3.5vh"><strong>LENOVO</strong></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="">Lenovo Legion Series</a>
+                            <a href="">Lenovo LOQ Series</a>
+                            <a href="">Lenovo Thinkpad Series</a>
+                            <a href="">Lenovo Ideapad Series</a>
+                            <a href="">Lenovo Yoga Series</a>
+                            <a href="">Lenovo ChromeBook Series</a>
+                            <a href="">Lenovo Flex Series</a>
+                            <a href="">Lenovo IdeaPad Gaming Series</a>
+                            <a href="">Lenovo ThinkBook Series</a>
+                        </div>
+                    </div>
+                    <div class="drpdown">
+                      <button class="dropbtn" style="font-size: 3.5vh"><strong>DELL</strong></button>
+                      <div id="myDropdown" class="dropdown-content">
+                          <a href="">Dell XPS Series</a>
+                          <a href="">Dell Inspiron Series</a>
+                          <a href="">Dell Alienware Series</a>
+                          <a href="">Dell Latitude Series</a>
+                          <a href="">Dell Precision Series</a>
+                          <a href="">Dell G Series</a>
+                          <a href="">Dell Vostro Series</a>
+                          <a href="">Dell Chromebook Series</a>
+                          <a href="">Dell Venue Series</a>
+                      </div>
+                  </div>
+                  <div class="drpdown">
+                    <button class="dropbtn" style="font-size: 3.5vh"><strong>ASUS</strong></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="">Asus ROG (Republic of Gamers) Series</a>
+                        <a href="">Asus ZenBook Series</a>
+                        <a href="">Asus VivoBook Series</a>
+                        <a href="">Asus TUF Gaming Series</a>
+                        <a href="">Asus ExpertBook Series:</a>
+                        <a href="">Asus Chromebook Series</a>
+                        <a href="">Asus Transformer Series</a>
+                        <a href="">Asus ProArt Series</a>
+                        <a href="">Asus ZenBook Flip Series</a>
+                    </div>
+                </div>
+                <div class="drpdown">
+                  <button class="dropbtn" style="font-size: 3.5vh"><strong>ACER</strong></button>
+                  <div id="myDropdown" class="dropdown-content">
+                      <a href="">Acer Aspire Series</a>
+                      <a href="">Acer Predator Series</a>
+                      <a href="">Acer Swift Series</a>
+                      <a href="">Acer Nitro Series</a>
+                      <a href="">Acer Chromebook Series</a>
+                      <a href="">Acer TravelMate Series</a>
+                      <a href="">Acer ConceptD Series</a>
+                      <a href="">Acer Spin Series</a>
+                      <a href="">Acer Enduro Series</a>
+                  </div>
+              </div>
+              <div class="drpdown">
+                <button class="dropbtn" style="font-size: 3.5vh"><strong>APPLE</strong></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="">MacBook Air Series</a>
+                    <a href="">MacBook Pro Series</a>
+                    <a href="">MacBook Series</a>
+                </div>
+            </div>
+            <div class="drpdown">
+              <button class="dropbtn" style="font-size: 3.5vh"><strong>MICROSOFT SURFACE</strong></button>
+              <div id="myDropdown" class="dropdown-content">
+                  <a href="">Surface Laptop Series</a>
+                  <a href="">Surface Pro Series</a>
+                  <a href="">Surface Book Series</a>
+                  <a href="">Surface Go Series</a>
+              </div>
+          </div>
+          <div class="drpdown">
+            <button class="dropbtn" style="font-size: 3.5vh"><strong>MSI</strong></button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="">MSI GS Series (Stealth)</a>
+                <a href="">MSI GE Series (Raider)</a>
+                <a href="">MSI GT Series (Titan)</a>
+                <a href="">MSI GP Series (Leopard):</a>
+                <a href="">MSI GL Series (Lunar):</a>
+                <a href="">MSI Prestige Series</a>
+                <a href="">MSI Modern Series</a>
+                <a href="">MSI Creator Series</a>
+                <a href="">MSI Alpha Series</a>
+                <a href="">MSI Bravo Series</a>
+            </div>
+          </div>
+          <div class="drpdown" >
+            <button class="dropbtn" style="font-size: 3.5vh"><strong>RAZER</strong></button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="">Razer Blade Stealth Series</a>
+                <a href="">Razer Blade Base Model Series</a>
+                <a href="">Razer Blade Advanced Model Series</a>
+                <a href="">Razer Blade Pro Series</a>
+            </div>
+          </div>
+          <div class="drpdown">
+            <button class="dropbtn" style="font-size: 3.5vh"><strong>LG</strong></button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="">LG Gram Series</a>
+                <a href="">LG Ultra Series</a>
+                <a href="">LG Gram 2-in-1 Series</a>
+                <a href="">LG Gram Pro Series:</a>
+            </div>
+          </div>
+                  </ul>
+                </div>
+      </div>
+      <div class="backgroundimage">
+              
+      </div>
+      <div class="logoclass">
+       <img id="logo" src="logo majed copy jd jd .png" alt="not rendered">
+      </div>
+      <div class="search-container">
+       <div class="textboxcont">
+       <input type="text" id="search" placeholder="Search...">
+       <button class="btn" onclick="">Search</button>
+       </div>
+
+       </div>
+       <script type="text/javascript">
+          document.addEventListener('DOMContentLoaded', function () {
+            const searchInput = document.getElementById('search');
+            const tagLists = document.querySelectorAll('.dropdown-content');
+            const tagLinks = document.querySelectorAll('.dropdown-content a');
+
+            function updateListVisibility() {
+                const searchTerm = searchInput.value.trim().toLowerCase();
+
+                tagLinks.forEach(function (tag) {
+                    const tagText = tag.textContent.toLowerCase();
+                    const isVisible = tagText.includes(searchTerm);
+                    tag.style.display = isVisible ? 'block' : 'none';
+                });
+            }
+
+            searchInput.addEventListener('input', updateListVisibility);
+
+            searchInput.addEventListener('keydown', function (event) {
+                if (event.key === 'Enter') {
+                    const visibleLinks = Array.from(tagLinks).filter(link => link.style.display !== 'none');
+                    if (visibleLinks.length > 0) {
+                        window.location.href = visibleLinks[0].getAttribute('href');
+                    }
+                }
+            });
+
+            searchInput.addEventListener('blur', function () {
+                tagLists.forEach(function (list) {
+                    list.style.display = 'none';
+                });
+            });
+        });
+
+     </script>
+        <div class="Welcome">
+         <p class="text">("Welcome to Computer's Area !!")</p>
+
+       </div>
+            </div>
+       </div>
+       <div class="footer">
+         <footer>
+          <a href=""><i  class="fa-brands fa-square-x-twitter" style="color:transparent;font-size:5.2vh; padding-left:22vw; padding-top:4vh;"></i></a>
+          <a  href="https://x.com/Majed748056?t=4qTeZX5tX_VHSw898RAG-w&s=09"><i  class="fa-brands fa-square-x-twitter" style="color:rgb(59, 63, 62);font-size:5.2vh; padding-left:2vw; padding-top:4vh;"></i></a>
+          <a href="https://instagram.com/majedshmait?igshid=NGVhN2U2NjQ0Yg=="><i class="fa-brands fa-square-instagram" style="color:rgb(235, 15, 151);font-size:5.2vh;padding-left:2vw; padding-top: 4vh;"></i></a>
+          <a href="https://wa.me/qr/5KBLWS3KX6MJF1"><i class="fa-brands fa-square-whatsapp" style="font-size:5.2vh;padding-left: 2vw; padding-top:4vh;color: rgb(30, 194, 30);"></i></a>
+           <a href="https://github.com/majedshmait"><i class="fa-brands fa-square-github" style="font-size:5.2vh;padding-left: 2vw; padding-top:4vh;color: rgb(58, 58, 58);"></i></a>
+          <a href="https://discord.gg/Xb2qKymb"><i class="fa-brands fa-discord" style="font-size:5.2vh;padding-left: 2vw; padding-top:4vh;color:rgb(102, 19, 180);"></i></a>
+          <a href="https://www.reddit.com/u/New-Economics9235/s/Gqdr2HUD2I"><i class="fa-brands fa-reddit" style="font-size:5.2vh;padding-left: 2vw; padding-top:4vh;color:rgb(204, 61, 17);"></i></a>
+          <a href="https://www.linkedin.com/in/majed-shmait-718b52298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin" style="font-size:5.2vh;padding-left: 2vw; padding-top:4vh;color:rgb(19, 104, 202);"></i></a>
+          <a href="https://youtube.com/@majedshmait8112?si=zGtn_Ay0gflGJ8IZ"><i class="fa-brands fa-youtube" style="font-size:5.2vh;padding-left: 2vw; padding-top:4vh;color:rgb(236, 22, 22);"></i></a>
+          <a href="https://www.tiktok.com/@majed_l1?_t=8hg6IRiceNb&_r=1"><i class="fa-brands fa-tiktok" style="font-size:5.2vh;padding-left: 2vw; padding-top:4vh;color:rgb(255, 253, 252);"></i></a>
+          <a href=""><i class="fa-brands fa-meta" style="font-size:5.2vh;padding-left: 2vw; padding-top:4vh;color:rgb(21, 120, 233);"></i></a>
+        
+         </footer>
+         <div >
+            <p id="copyright">copyright &copy;2023-2024 - Computer's Area Designed by <span id="designer"><strong>Majed</strong></span></p>
+          
+         </div>
+       </div>
+        </body>
+        </html>
